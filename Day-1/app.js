@@ -7,9 +7,9 @@
         Eg: $('p').hide()
 */
 
-// First Program
+// First Program ==> do this when h1 tag is clicked
 
-$('h1').click(function () {
+$('h1').click(() =>{
     console.log("You clicked on <h1>");
 
     // $('h1').hide()
