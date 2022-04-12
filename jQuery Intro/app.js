@@ -23,6 +23,15 @@ $('h1').click(function (){      // don't use arrow function
 
     $('.test').hide()
     $('#first').hide()
+
+    // ohter Selector  
+    $('*').click()  // Click on all selectors
+
+    // Specific Selector
+    $('p.test').click();
+
+    // Specific Selector
+    $('p:first').click()    // will select the first p tag in the document
 })
 
 // Ensure that jQuery run after the whole page is loaded & Enclose all the jQuery in between of this function
