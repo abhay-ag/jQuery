@@ -12,6 +12,15 @@
 $('h1').click(function (){      // don't use arrow function
     console.log("You clicked on <h1>");
 
+    // Element Selector
     // $('h1').hide()      // hides all the h1 tags
-    $(this).hide()          // Hides the specific object that is clicked upon
+
+    // this Selector
+    // $(this).hide()          // Hides the specific object that is clicked upon
+
+    // id Selector Eg: $('#p')
+    // class Selector Eg: $('.test')
+
+    $('.test').hide()
+    $('#first').hide()
 })
