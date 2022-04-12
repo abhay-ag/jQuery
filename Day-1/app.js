@@ -23,4 +23,14 @@ $(document).ready(function() {
     $('#clickMe').mouseenter(function(){
         console.log("Mouse Entered.");
     })
+
+    // Mouse Leave event
+    $("#clickMe").mouseleave(function(){
+        console.log('Mouse Left.');
+    })
+
+    // Hover Event
+    $("#clickMe").hover(function(){
+        console.log("Mouse Hovering.");
+    })
 })
