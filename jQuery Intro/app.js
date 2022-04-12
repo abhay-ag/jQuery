@@ -24,3 +24,8 @@ $('h1').click(function (){      // don't use arrow function
     $('.test').hide()
     $('#first').hide()
 })
+
+// Ensure that jQuery run after the whole page is loaded & Enclose all the jQuery in between of this function
+$(document).ready(function (){
+
+})
