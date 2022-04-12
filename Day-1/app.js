@@ -30,7 +30,10 @@ $(document).ready(function() {
     })
 
     // Hover Event
-    $("#clickMe").hover(function(){
-        console.log("Mouse Hovering.");
+    $("#clickMe").hover(function(){         // Has two states when enters and exits
+        console.log("Mouse Entered..  Hovering.");
+    },function(){
+        console.log("Mouse Left..  Hovering.");
     })
+    // Both the states can be captured by using two functions.
 })
