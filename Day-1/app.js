@@ -7,4 +7,20 @@ $(document).ready(function() {
 
     // ID Selector
     $('#first').click();
+
+    // Events in jQuery
+    // Mouse Events = click, dblclick, moueenter, mouseleave
+    // Form Event = submit, change, focus, blur
+    // Keyboard Event = keypress, keydown, keyup
+    // Document /Window events = load, resize, scroll, unload
+
+    // Double CLick Event
+    $('#clickMe').dblclick(function(){
+        console.log("You double clicked the button.");
+    })
+
+    // Mouse Enter event
+    $('#clickMe').mouseenter(function(){
+        console.log("Mouse Entered.");
+    })
 })
