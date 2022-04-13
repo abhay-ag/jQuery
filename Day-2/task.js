@@ -1,19 +1,19 @@
 $(document).ready(function(){
 
-    // Fires when the key is being pressed
-    $(document).keydown(function(){
-        console.log("Key is being pressed");
-    })
+    // // Fires when the key is being pressed
+    // $(document).keydown(function(){
+    //     console.log("Key is being pressed");
+    // })
 
-    // Fires when the key is stopped pressing
-    $(document).keyup(function(){
-        console.log("Key is up");
-    })
+    // // Fires when the key is stopped pressing
+    // $(document).keyup(function(){
+    //     console.log("Key is up");
+    // })
 
-    // Fires only when the key is pressed
-    $(document).keypress(function(){
-        console.log("key pressed");
-    })
+    // // Fires only when the key is pressed
+    // $(document).keypress(function(){
+    //     console.log("key pressed");
+    // })
 
     // FORM EVENTS
 
