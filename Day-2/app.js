@@ -21,4 +21,9 @@ $(document).ready(function(){
             console.log("Content visible");
         })
     })
+
+    // Toggle method performs both hide and show function in the specified time
+    $('.btn1').click(function(){
+        $("#learning").toggle(1000)
+    })
 })
