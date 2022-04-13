@@ -7,7 +7,18 @@ $(document).ready(function(){
 
     // .hide function takes time as milliseconds and takes that time to hide the object.
 
-    $('#learning').hide(3000, function(){
-        console.log("Content Hidden");
+    // Single parameter
+
+    // $('#learning').hide(4000);
+
+    // Double parameter.
+    $('.btn').click(function(){
+        $('#learning').hide(3000, function(){
+            console.log("Content Hidden");
+        })
+
+        $("#learning").show(4000, function(){
+            console.log("Content visible");
+        })
     })
 })
