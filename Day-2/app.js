@@ -48,4 +48,21 @@ $(document).ready(function(){
     $('.btn5').click(function(){
         $('.test').fadeTo(1000, 0.2);
     })
+
+    // slideDown, slideUp, slideToggle events
+
+    // slideUp Event
+    $('.btn6').click(function(){
+        $('.test').slideUp(1000);
+    })
+
+    // slideDown event
+    $('.btn7').click(function(){
+        $('.test').slideDown(1000);
+    })
+
+    // slideToggle event
+    $('.btn8').click(function(){
+        $('.test').slideToggle(1000);
+    })
 })
