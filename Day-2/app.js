@@ -26,4 +26,26 @@ $(document).ready(function(){
     $('.btn1').click(function(){
         $("#learning").toggle(1000)
     })
+
+    // fadeIn and fadeOut fadeToggle fadeTo;
+
+    // fadeOut event
+    $('.btn3').click(function(){
+        $('.test').fadeOut(1000);
+    })
+
+    // fadeIn event
+    $('.btn2').click(function(){
+        $('.test').fadeIn(1000);
+    })
+
+    // fadeToggle event
+    $('.btn4').click(function(){
+        $('.test').fadeToggle(1000);
+    })
+
+    // fadeTo uses two parameters, first is the time in milliseconds and second is the opacity
+    $('.btn5').click(function(){
+        $('.test').fadeTo(1000, 0.2);
+    })
 })
