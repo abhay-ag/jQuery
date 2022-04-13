@@ -67,16 +67,19 @@ $(document).ready(function(){
     })
 
     // ANIMATE Method
+    $('.btn9').click(function(){
+        $("#learning").animate({
+            opacity: 0.3,
+            height: '100px',
+            width: '350px'
+        }, 2000)
+    })
 
-    $("#learning").animate({
-        opacity: 0.3,
-        height: '100px',
-        width: '350px'
-    }, 2000)
-
-    $(".test").animate({
-        opacity: 0.7,
-        height: '100px',
-        width: '350px'
-    }, "slow")
+    $('.btn10').click(function(){
+        $(".test").animate({
+            opacity: 0.7,
+            height: '100px',
+            width: '350px'
+        }, "slow")
+    })
 })
