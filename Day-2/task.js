@@ -30,6 +30,10 @@ $(document).ready(function(){
     $("#taskInput").focus(function(){
         console.log("Focus changed to form");
     })
+    $("select").change(function(){
+        let selectedOption = $(this).find(":selected").val();
+        console.log("You selected: ", selectedOption);
+    })
 
     // Task - 1
     let i =0;
