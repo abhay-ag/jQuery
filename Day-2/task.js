@@ -30,4 +30,10 @@ $(document).ready(function(){
     $("#taskInput").focus(function(){
         console.log("Focus changed to form");
     })
+
+    // Task - 1
+    let i =0;
+    $('#keyPI').keypress(function(){
+        $('span').text(i += 1)
+    })
 })
