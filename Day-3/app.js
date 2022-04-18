@@ -43,4 +43,14 @@ $(document).ready(() =>{
     $('#addclass').click(() =>{
         $("#learn").addClass("class1")
     })
+
+    // emptying the contents of an element
+    $("#empty").click(() => {
+        $("#learn").empty()
+    })
+
+    // Removing an element completely from the html syntax
+    $("#rem").click(() => {
+        $('#learn').remove()
+    })
 })
