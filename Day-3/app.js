@@ -33,4 +33,14 @@ $(document).ready(() =>{
     $("#appli").click(() =>{
         $('ol').append("<li>Added after </li>")
     })
+
+    // adding css to a particular element
+    $('#addcss').click(() => {
+        $("#learn").css('background-color', 'Green')
+    })
+
+    // adding classes to an element
+    $('#addclass').click(() =>{
+        $("#learn").addClass("class1")
+    })
 })
