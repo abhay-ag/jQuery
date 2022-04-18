@@ -11,3 +11,12 @@
         3. after() ==> inserts content after the selected elements
         4. before() ==> inserts content before the selected elements
 */
+
+$(document).ready(() =>{
+    $('#add').click(() => {
+        $('p').append("<b>This is appended text.</b>")     // we can also write html in the append selector
+    })
+    $('#pre').click(() =>{
+        $('p').prepend("<b>This is prepended text. </b>")
+    })
+})
