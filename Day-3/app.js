@@ -19,4 +19,18 @@ $(document).ready(() =>{
     $('#pre').click(() =>{
         $('p').prepend("<b>This is prepended text. </b>")
     })
+
+    $("#addli").click(() =>{
+        $('ol').before("<li>Added Before</li>")            // before adds an unordered li to the current list whereas prepend will add a new ordered li to the current list
+    })
+    $("#befli").click(() => {
+        $('ol').after("<li>Added after </li>")              // after adds UL> LI whereas append adds an OL > LI
+    })
+
+    $("#preli").click(() =>{
+        $('ol').prepend("<li>Added after </li>")
+    })
+    $("#appli").click(() =>{
+        $('ol').append("<li>Added after </li>")
+    })
 })
