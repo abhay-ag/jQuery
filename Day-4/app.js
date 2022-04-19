@@ -14,3 +14,11 @@
 // API ==> Application Programming Interface
 
 // API Brings partial data from the server to the client.
+
+// AJAX is based upon open standards: 
+/*
+    1. Data fetch through XMLHttpRequest objects.
+    2. Always use Async Mode for data transfer.
+*/
+
+// AJAX can't Work alone. It uses JavaScript and DOM requests.
