@@ -12,3 +12,5 @@
 
 // Where there is a need for real time data AJAX is used.
 // API ==> Application Programming Interface
+
+// API Brings partial data from the server to the client.
