@@ -25,6 +25,7 @@
 
 let getBtn = document.querySelector('.btn-primary')
 let showBtn = document.querySelector('.btn-secondary')
+let respText = document.querySelector("#responseText")
 
 getBtn.addEventListener('click', () =>{
     console.log("You clicked the getBtn");
@@ -56,4 +57,7 @@ getBtn.addEventListener('click', () =>{
 
     // send the request to server
     xhr.send()
+
+    // checking the async behaviour
+    console.log("Task done");       // runs before the processing i.e Process is asynchronous
 })
