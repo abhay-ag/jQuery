@@ -22,3 +22,19 @@
 */
 
 // AJAX can't Work alone. It uses JavaScript and DOM requests.
+
+let getBtn = document.querySelector('.btn-primary')
+let showBtn = document.querySelector('.btn-secondary')
+
+getBtn.addEventListener('click', () =>{
+    console.log("You clicked the getBtn");
+
+    // AJAX implementation
+
+    // create a new instance of the xhr
+    const xhr = new XMLHttpRequest();
+
+    // Open request object
+    // Note: GET means data will come
+    xhr.open('GET', "ajaxServer.txt", true)
+})
