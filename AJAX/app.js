@@ -35,6 +35,11 @@ getBtn.addEventListener('click', () =>{
     const xhr = new XMLHttpRequest();
 
     // Open request object
-    // Note: GET means data will come
+    // Note: GET means data will come, second paramter is source URL
     xhr.open('GET', "ajaxServer.txt", true)
+
+    // Printing progress if required
+    xhr.onprogress = () => {
+        console.log("In Progress.....");
+    }
 })
