@@ -36,6 +36,7 @@ getBtn.addEventListener('click', () =>{
 
     // Open request object
     // Note: GET means data will come, second paramter is source URL
+    // third parameter is true ==> Means Async mode --> NON - BLOCKING MODE
     xhr.open('GET', "ajaxServer.txt", true)
 
     // Printing progress if required
