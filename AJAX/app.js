@@ -40,7 +40,20 @@ getBtn.addEventListener('click', () =>{
     xhr.open('GET', "ajaxServer.txt", true)
 
     // Printing progress if required
-    xhr.onprogress = () => {
+    xhr.onprogress = function() {
         console.log("In Progress.....");
     }
+
+    // When response is ready to be deliverd from server to client
+
+    xhr.onload = function() {
+        if(this.status === 200){
+            console.log(this.responseText);
+        }else{
+            console.log(this.status);
+        }
+    }
+
+    // send the request to server
+    xhr.send()
 })
