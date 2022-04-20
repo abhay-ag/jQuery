@@ -61,3 +61,13 @@ getBtn.addEventListener('click', () =>{
     // checking the async behaviour
     console.log("Task done");       // runs before the processing i.e Process is asynchronous
 })
+
+// Isslustration of on ready state change function
+
+/*
+    0 UNSENT => Client has been created but open() not called
+    1 OPENED => open() has been called
+    2 HEADERS_RECIEVED => send() has been called and header and status are available
+    3 LOADING => Downloading responseText holds partial data
+    4 DONE => The operation is complete
+*/
