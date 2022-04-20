@@ -34,7 +34,13 @@ getBtn.addEventListener('click', () =>{
 
     // create a new instance of the xhr
     const xhr = new XMLHttpRequest();
+    
+    // onreadystatechange()
 
+    xhr.onreadystatechange = () => {
+        console.log('ready state is ', xhr.readyState);
+    }
+    
     // Open request object
     // Note: GET means data will come, second paramter is source URL
     // third parameter is true ==> Means Async mode --> NON - BLOCKING MODE
@@ -60,6 +66,7 @@ getBtn.addEventListener('click', () =>{
 
     // checking the async behaviour
     console.log("Task done");       // runs before the processing i.e Process is asynchronous
+
 })
 
 // Isslustration of on ready state change function
