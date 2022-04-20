@@ -35,24 +35,26 @@ getBtn.addEventListener('click', () =>{
     // create a new instance of the xhr
     const xhr = new XMLHttpRequest();
     
-    // onreadystatechange()
-
-    xhr.onreadystatechange = () => {
-        console.log('ready state is ', xhr.readyState);
-    }
-    
     // Open request object
     // Note: GET means data will come, second paramter is source URL
     // third parameter is true ==> Means Async mode --> NON - BLOCKING MODE
     xhr.open('GET', "ajaxServer.txt", true)
-
+    
     // Printing progress if required
     xhr.onprogress = function() {
         console.log("In Progress.....");
     }
+    
+    // onreadystatechange()
 
+    // logs 2,3,4 when async
+    // logs 4 when sync
+    xhr.onreadystatechange = () => {
+        console.log('ready state is ', xhr.readyState);
+    }
+    
     // When response is ready to be deliverd from server to client
-
+    
     xhr.onload = function() {
         if(this.status === 200){
             console.log(this.responseText);
