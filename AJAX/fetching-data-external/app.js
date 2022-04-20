@@ -12,7 +12,7 @@ dispBtn.addEventListener('click', () => {
         if(this.status === 200){
             // parsing the recieved text
             let obj = JSON.parse(this.responseText)
-            // console.log(obj);
+            console.log(obj);
 
             // publishing dynamically through JS
             let str = ''
