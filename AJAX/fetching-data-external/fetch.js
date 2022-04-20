@@ -9,6 +9,6 @@ btn.addEventListener('click', () =>{
         const obj = JSON.parse(this.responseText)
 
         console.log(obj);  
-     }
-     xhr.send()
+    }
+    xhr.send()
 })
