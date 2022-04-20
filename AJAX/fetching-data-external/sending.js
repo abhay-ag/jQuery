@@ -6,7 +6,7 @@ dispBtn.addEventListener('click', () => {
     const xhr = new XMLHttpRequest()
 
     // using a rest api
-    xhr.open('POST', 'http://dummy.restapiexample.com/api/v1/employees', true)
+    xhr.open('POST', 'http://dummy.restapiexample.com/api/v1/create', true)
 
     xhr.getResponseHeader('Content-type', 'application/json')
 
@@ -17,7 +17,7 @@ dispBtn.addEventListener('click', () => {
             console.log("Error occurred");
         }
     }
-    prmtrs = '{"name": "Ram", "Salary": "12000", "age": "25"}'
 
-    xhr.send()
+    prmtrs = '{"name": "Ram", "Salary": "12000", "age": "25"}'
+    xhr.send(prmtrs)
 })
