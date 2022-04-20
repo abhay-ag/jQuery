@@ -1,0 +1,27 @@
+{
+    "data":[
+        {
+            "name": "Abhay",
+            "roll_no": 2110990034,
+            "stream": "B.Tech",
+            "fee": 82000
+        },
+        {
+            "name": "Abhishek",
+            "roll_no": 210990058,
+            "stream": "B.Tech",
+            "fee": 82000
+        },{
+            "name": "Abhiraj",
+            "roll_no": 2110990057,
+            "stream": "B.Tech",
+            "fee": 82000
+        },
+        {
+            "name": "Aashish",
+            "roll_no": 2110990022,
+            "stream": "B.Tech",
+            "fee": 82000
+        }
+    ]
+}
