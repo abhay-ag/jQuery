@@ -1,4 +1,3 @@
-const getBtn = document.querySelector('.get')
 const sendBtn = document.querySelector('.send')
 const fetchBtn = document.querySelector('.fetch')
 const grt35 = document.querySelector('.grt35')
