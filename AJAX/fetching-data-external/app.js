@@ -1,4 +1,4 @@
-const dispBtn = document.querySelector('.btn-secondary')
+const dispBtn = document.querySelector('.display')
 
 // using a third party api
 dispBtn.addEventListener('click', () => {
@@ -6,7 +6,7 @@ dispBtn.addEventListener('click', () => {
     const xhr = new XMLHttpRequest()
 
     // using a rest api
-    xhr.open('GET', 'http://dummy.restapiexample.com/api/v1/employees', true)
+    xhr.open('GET', 'https://gorest.co.in/public/v2/posts', true)
 
     xhr.onload = function(){
         if(this.status === 200){
@@ -16,10 +16,10 @@ dispBtn.addEventListener('click', () => {
 
             // publishing dynamically through JS
             let str = ''
-            let data = obj.data
             let lst = document.querySelector("#list")
-            for(let i = 0; i < data.length ; i++){
-                str += `<li>${obj.data[i].employee_name} </li>`
+            for(let i = 0; i < obj.length ; i++){
+                str += `<li>${obj[i].title} </li>`
+                // console.log(obj[i].title);
             }
             // rendering onto the screen
             lst.innerHTML = str

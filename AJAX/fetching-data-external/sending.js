@@ -1,7 +1,7 @@
-const dispBtn = document.querySelector('.btn-secondary')
+const disp1Btn = document.querySelector('.fetch')
 
 // using a third party api
-dispBtn.addEventListener('click', () => {
+disp1Btn.addEventListener('click', () => {
     console.log("You clicked the display button");
     const xhr = new XMLHttpRequest()
 
@@ -20,4 +20,5 @@ dispBtn.addEventListener('click', () => {
 
     prmtrs = '{"name": "Ram", "Salary": "12000", "age": "25"}'
     xhr.send(prmtrs)
+    console.log("Work done ..... ");
 })
