@@ -30,7 +30,6 @@ sendBtn.addEventListener('click', () =>{
 })
 
 fetchBtn.addEventListener('click', () => {
-    console.log(obj.data[0].salary);
     let str = ''
 
     let data = obj.data
