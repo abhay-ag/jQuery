@@ -7,8 +7,38 @@
         },
         {
             "name": "Abhiraj Singh",
-            "salaray": 50000,
+            "salaray": 20000,
             "age": 20
+        },
+        {
+            "name": "Abhishek Mehta",
+            "salaray": 60000,
+            "age": 35
+        },
+        {
+            "name": "Aastha Anand",
+            "salaray": 80000,
+            "age": 19
+        },
+        {
+            "name": "Harleen Kaur",
+            "salaray": 70000,
+            "age": 22
+        },
+        {
+            "name": "Aarushi Vashisht",
+            "salaray": 210000,
+            "age": 40
+        },
+        {
+            "name": "Aarush Khanna",
+            "salaray": 90000,
+            "age": 33
+        },
+        {
+            "name": "Aashish Bhardwaj",
+            "salaray": 60000,
+            "age": 10
         }
     ]
 }
