@@ -5,7 +5,7 @@ const grt35 = document.querySelector('.grt35')
 const grt10000 = document.querySelector('.grt10000')
 let obj = {}
 
-getBtn.addEventListener('click', () => {
+document.addEventListener('DOMContentLoaded', () => {
     const xhr = new XMLHttpRequest();
 
     xhr.open('GET', 'package.json', true)
