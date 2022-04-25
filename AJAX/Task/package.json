@@ -1,0 +1,14 @@
+{
+    "data":[
+        {
+            "name": "Abhay Aggarwal",
+            "salaray": 50000,
+            "age": 18
+        },
+        {
+            "name": "Abhiraj Singh",
+            "salaray": 50000,
+            "age": 20
+        }
+    ]
+}
