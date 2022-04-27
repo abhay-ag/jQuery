@@ -1,6 +1,8 @@
 const subBtn = document.querySelector('.submit')
 const un = document.querySelector('.uName')
 const ps = document.querySelector('.pswrd')
+const red = document.querySelector('.red')
+const green = document.querySelector('.green')
 let obj = {}
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -22,7 +24,7 @@ subBtn.addEventListener('click', () =>{
 
     un.value = ''
     ps.value = ''
-    
+
     for(let i = 0; i < obj.data.length; i++){
         if(uEnter === obj.data[i].uName && pEnter === obj.data[i].pswrd){
             flag = true;
@@ -31,8 +33,18 @@ subBtn.addEventListener('click', () =>{
     }
 
     if(flag){
-        alert("User Found")
+        green.classList.add('show')
+        red.classList.remove('show')
+        setTimeout(() => {
+            green.classList.remove('show')
+            red.classList.remove('show')
+        }, 1500);
     }else{
-        alert("User not found")
+        red.classList.add('show')
+        green.classList.remove('show')
+        setTimeout(() => {
+            red.classList.remove('show')
+            green.classList.remove('show')
+        }, 1500);
     }
 })
