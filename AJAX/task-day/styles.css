@@ -70,6 +70,9 @@ h1{
     color: white;
     border-radius: 20px;
 }
+.submit:active{
+    background-color: #7f7f7f;
+}
 .alert-window{
     width: 40rem;
     margin-bottom: 1rem;
