@@ -40,13 +40,13 @@ h1{
     margin-bottom: 5rem;
 }
 .uname, .password{
-    width: 70%;
+    width: 80%;
     height: 22.5vh;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     letter-spacing: 5px;
 }
 .uName, .pswrd{
